@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Seleccion</title>
+</head>
+<body>
+    <h1>Estoy en la pagina 2</h1>
+    <a href="index.html">Volver a la pagina principal</a>
+    <br>
+    <!-- Radio button-->
+    <!--name deben ser iguales, por que solo se selecciona una sola opcion-->
+    <h2>Seleccione una opcion</h2>
+    <label for="html">HTML</label><input type="radio" name="opcion" id="html" value="html"> <br>
+    <input type="radio" name="opcion" id="css" value="css"> CSS<br>
+    <input type="radio" name="opcion" id="js" value="js"> JavaScript<br>
+    <!-- opcion = css -->
+    <br><hr>
+
+    <!-- checkbok-->
+    <!-- url?opciones1=html&opciones2=css-->
+    <h2>Seleccione las opciones que quiera</h2>
+    <label for="opciones1">HTML</label> <input type="checkbox" name="opciones1" id="opciones1" value="html"><br>
+    <input type="checkbox" name="opciones2" id="opciones2" value="css"> CSS<br>
+    <input type="checkbox" name="opciones3" id="opciones3" value="js"> JavaScript<br>
+    <br><hr>
+    <!-- Select-->
+    <label for="lenguajes">Seleccione una opcion</h2>
+    <!-- leguajes = 0-->
+    <select id="lenguajes" name="lenguajes">
+        <option value="0" selected>Seleccione una lenguaje</option>
+        <option value="1" >Java</option>
+        <option value="2" >Python</option>
+        <option value="3" >JavaScript</option>
+        <option value="4" >C#</option>
+        <option value="5" >Ruby</option>
+    </select>
+
+</body>
+</html>

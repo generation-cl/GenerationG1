@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de estilo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            width: 200px;/*ancho*/
+            height: 50px;/*alto*/
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.5;/*separacion entre las lineas de texto*/
+            font-weight: bold;/*900;/*de 100 a 900*/
+        }
+        div{
+            width:400px;
+            height: 400px;
+            overflow: scroll;/*barra de desplazamiento*/
+            background: url("assets/img/img_html.png") no-repeat center; 
+            background-color: rgba(255,255,255);
+            background-size: 50%;
+            border: 1px solid #ff8484;
+            border-top-color: rgb(236, 146, 11);
+            border-radius: 10px;
+            text-align: center;
+
+        }
+/*hexadecimal 16: 0123456789ABCDEF
+#12 34 56 ROJO VERDE AZUL RGB()
+
+RGB(255,255,0)
+*/
+        a{
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+        }
+        /*posicion: static, relative, fixed, absolute, sticky..*/
+        .estatico{
+            width: 500px;
+            height: 20px;
+            position:static;/*posicion original*/
+        }
+        .relativo{
+            width: 500px;
+            height: 20px;
+            left: 50px;/*top, rigth, bottom, left*/
+            position:relative;/*posicion original*/
+        }
+        .fijo{
+            width: 500px;
+            height: 20px;
+            right: 50px;/*top, right, bottom, left*/
+            top:0px;
+            position:fixed;/*posicion original*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Elementos de estilo</h1>
+        <a href="#" >link de prueba</a>
+        <p>parrafo 1</p>
+    </div>
+    <div class="estatico">
+        <p> este es un texto con posicionamiento static</p>
+    </div>
+    <div class="relativo">
+        <p> este es un texto con posicionamiento relativo</p>
+    </div>
+    <div class="fijo">
+        <p> este es un texto con posicionamiento fijo</p>
+    </div>
+</body>
+</html>

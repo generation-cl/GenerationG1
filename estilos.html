@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* 3 formas basicas de asignar un estilo*/
+        /*1.- por Elemento HTML, todas etiquetas se ven afectadas */
+        div {
+            background-color: bisque;
+            width: 50%;
+        }
+        p{
+            background-color: salmon;
+            color:aquamarine;
+        }
+        img{
+            width: 400px;
+        }
+        /*EM= 16px y REM unidades de medidas*/
+
+        /*2.- por clases, se ven afectadas, solo aquellas etiquetas que tengan la clase */
+        /* cualquier etiqueta*/
+        .colorWhite {
+            color: whitesmoke;
+            background-color: forestgreen;
+        }
+        .generation1{
+            color:blueviolet !important;
+        }
+        .g1{
+            color: red !important;
+        }
+
+        /*3.- por ID, estilo especifico para la etiqueta*/
+        #importante{
+            color: pink;
+        }
+        #pg1{
+            color:darkblue !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>parrafo 1</p>
+        <p class="colorWhite">parrafo 2</p>
+        <p class="colorWhite">parrafo 3</p>
+        <p id="importante">parrafo 4</p>
+        <img src="assets/img/53j.png" alt="front">
+    </div>
+    <div class="colorWhite">
+        <p>parrafo 5</p>
+    </div>
+
+    <p id="pg1" class="g1 generation1" style="color: yellow !important;">parrafo 6</p>
+</body>
+</html>

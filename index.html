@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+<body>
+    <!-- Headings -->
+    <h1>Titulo h1</h1>
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <!--salto de linea-->
+    <br>
+    <!-- linea horizontal-->
+    <hr>
+    <!-- Parrafos para trabajar con texto-->
+    <p>
+        <b>Explore</b> <i>los más de 100 productos</i> <u>y comience a crear en AWS</u> con la capa gratuita. Hay tres tipos diferentes de ofertas gratuitas disponibles según el producto utilizado. Haga clic en el icono de abajo para explorar nuestras ofertas.
+    </p>
+    <p>
+        <b>
+            <i>
+                <u>
+                    Israel Alexis Palma Quezada
+                </u>
+            </i>
+        </b>
+    </p>
+    <br><hr>
+    <!-- imagenes-->
+    <img src="imagen.png" alt="imagen1">
+    <img src="assets/img/img_html.png" alt="html" width="50" height="50">
+    <!--al agregar solo width o height, la imagen mantendra la proporcion-->
+    <img src="assets/img/53j.png" alt="imagen2" height="100">
+    <br><hr>
+    <!--Link o hipervinculos-->
+    <a href="https://www.generation.org/" >Visitar Generation </a>
+    <br>
+    <!--url valor absoluto, redirige a otra pagina web-->
+    <!--target="_blank" abre la pagina en otra pestaña-->
+    <a href="https://www.lun.com" target="_blank"> acceder a Lun.com</a>
+    <!--url valor relativo, redirige dentro de la misma web -->
+    <a href="pagina2.html">Ir a la pagina 2</a>
+    <!--url valor anclaje, movernos dentro de la misma pagina -->
+    <a href="#nombre">ir a seccion de la pagina</a>
+    <!--reemplazar el texto por una imagen -->
+    <a href="https://www.generation.org/" target="_blank">
+        <img src="assets/img/you-employed.png" alt="you employed" width="50">
+    </a>
+    <br><hr>
+    <!-- Listas : Ordenadas y las No Ordenadas-->
+    <ol>
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <li> grupo 7
+            <ol>
+                <li>grupo 7.1</li>
+                <li>grupo 7.2</li>
+            </ol>
+        </li>
+    </ol>
+    <!--lista no ordenada ul-->
+    <ul>
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <li> grupo 7
+            <ul>
+                <li>grupo 7.1</li>
+                <li>grupo 7.2</li>
+                <li> 
+                    <ul>
+                        <li>
+                            <a href="#menu">Menu</a>
+                        </li>
+                        <li>curso b</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>-->
+    <br><hr>
+    <!--Tablas-->
+    <table>
+        <thead>
+            <tr>
+                <th>Edad</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>Ayun</td>
+                <td></td>
+                <td>Quezada</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Zoe</td>
+                <td>Palma</td>
+                <td></td>
+            </tr> 
+            
+        </tbody>
+    </table>
+
+</body>
+</html>
