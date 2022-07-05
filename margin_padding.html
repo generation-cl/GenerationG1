@@ -20,14 +20,70 @@
             width:40px;
             height: 40px;
             background-color: violet;
+            display: inline-block;
         }
         #hijo2{
             width:40px;
             height: 40px;
             background-color: salmon;
+            display: inline-block;
         }
         /*margin:efecto optico desplazamiento desde paredes */
         /*padding: desplazar internamento elementos*/
+
+        /*elementos inline <a><img><input><label><select><textarea>*/
+        /*elementos block  <body><div> <form> <h1>-<h6> <p> <table> <ul><ol><li>*/
+        /* NUNCA PONER ELEMENTOS DE BLOCK DENTRO DE UN ELEMENTO INLINE*/
+    a{
+        display: block;
+        background-color: silver;
+    }
+    p{
+        display: inline-block;/* se fusionan*/
+    }
+    #default1{
+        width: 50px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        vertical-align: default;/*ya es por default*/
+    }
+    #default2{
+        width: 50px;
+        height: 200px;
+        background-color: blue;
+        display: inline-block;
+    }
+
+    #top1{
+        width: 50px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #top2{
+        width: 50px;
+        height: 200px;
+        background-color: blue;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #middle1{
+        width: 50px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #middle2{
+        width: 50px;
+        height: 200px;
+        background-color: blue;
+        display: inline-block;
+        vertical-align: middle;
+    }
     </style>
 </head>
 <body>
@@ -35,5 +91,38 @@
         <div id="hijo"></div>
         <div id="hijo2"></div>
     </div>
+    <!-- nunca-->
+    <a href="index.php"><h1></h1></a>
+
+    <!--block-->
+    <a href="#grupo1">grupo 1</a>
+    <a href="#grupo2">grupo 2</a>
+    <a href="#grupo3">grupo 3</a>
+    <a href="#grupo4">grupo 4</a>
+    <a href="#grupo5">grupo 5</a>
+    <a href="#grupo6">grupo 6</a>
+
+    <p>lkqweufhg oiqerhf qewoi ufyqf ewifyqiuy eiwuyf qewif</p>
+    <p>iwgqf ewiufh ewiufyewqi lhgeoi fi hlkefgh kdghj laksdjh </p>
+
+    <!--alineacion vertical por default (bottom)-->
+    <div >
+        <div id="default1"></div>
+        <div id="default2"></div>
+    </div>
+
+    <!--alineacion vertical superior (Top)-->
+    <div >
+        <div id="top1"></div>
+        <div id="top2"></div>
+    </div>
+    <br>
+    <!--alineacion vertical central (Middle)-->
+    <div >
+        <div id="middle1"></div>
+        <div id="middle2"></div>
+    </div>
+
+    <!--media query-->
 </body>
 </html>
